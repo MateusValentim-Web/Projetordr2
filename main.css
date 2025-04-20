@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: #1c1c1c;
+    color: #fff;
+    }
+
+    header {
+        background-color: #800000;
+        color: #fff;
+        padding:  7px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #DAA520;
+    }
+
+    .hero-texto {
+        max-width: 600px;
+        text-align: center;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    } 
+
+    .hero-texto h2 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .botao {
+        padding: 10px 20px;
+        background-color: #DAA520;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        padding: 8px 16px;
+        font-size: 1rem;
+        width: auto;
+        transition: all 0.3s ease;
+        
+    }
+
+    .botao:hover {
+        background-color: #fff;
+        color: #8B0000;
+        transform: translateY(-3px);
+    }
+
+    .hero-imagem img {
+        max-width: 100%;
+        border-radius: 10px;
+        flex: 1;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .historia-flex {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        flex-wrap: wrap; /* garante responsividade em telas menores */
+    }
+    
+    .historia-conteudo {
+        flex: 1;
+    }
+    
+    .historia-conteudo h2 {
+        font-size: 2rem;
+        color: #800000;
+        margin-bottom: 20px;
+    }
+    
+    .historia-conteudo p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #fff;
+    }
+    
+    .historia-imagem {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .historia-imagem img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .personagens {
+        padding: 60px 20px;
+        background-color: #121212;
+        text-align: center;
+    }
+
+    .personagens h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #DAA520;
+        font-family: 'Special Elite', cursive;
+    }
+    
+    .cards-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 200px;
+        min-height: 340px; /* <-- altura mínima para padronizar */
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* distribui imagem, texto e botão */
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;  /* <-- força todas as imagens a terem a mesma altura */
+            object-fit: cover; /* corta imagem sem distorcer */
+        }
+
+    .card h3 {
+        font-size: 1.3rem;
+        color: #DAA520;
+    }
+    
+    .card p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* leve brilho dourado */
+        }
+
+    .card-info {
+        display: none;
+        margin-top: 10px;
+        color: #fff;
+        }
+        
+        /* Quando for visível */
+        .card-info.visible {
+        display: block;
+        }
+
+        footer {
+        background-color: #800000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        }
+
+        .video-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #1a1a1a;
+        color: #fff;
+        }
+                
+        .video-section h2 {
+        font-family: 'Special Elite', cursive;
+        font-size: 2em;
+        margin-bottom: 20px;
+        }
+                
+        .video-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+
+        .galeria-screenshots {
+            background-color: #111;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .galeria-screenshots h2 {
+            font-family: 'Special Elite', cursive;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        
+        .grid-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .grid-galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .grid-galeria img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px #eab308;
+        }
+        
+        .contato-section {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .contato-section h2 {
+            font-family: 'Special Elite', cursive;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .form-contato {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .form-contato input,
+        .form-contato textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .form-contato input::placeholder,
+        .form-contato textarea::placeholder {
+            color: #bbb;
+        }
+        
+        .form-contato button {
+            padding: 12px;
+            border: none;
+            background-color: #800000;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .form-contato button:hover {
+            background-color: #a10000;
+        }
+        
+        
+        
+        
